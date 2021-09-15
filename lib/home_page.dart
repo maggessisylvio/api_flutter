@@ -2,8 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 class HomePage extends StatelessWidget {
-  const HomePage({Key? key}) : super(key: key);
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -16,26 +14,12 @@ class HomePage extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             TextButton(
-              onPressed: () => Get.toNamed('/http'),
+              onPressed: () => Get.toNamed('/api_access'),
               child: Text(
-                'HTTP',
+                'Access API',
                 style: TextStyle(fontSize: 20),
               ),
             ),
-            TextButton(
-              onPressed: () => Get.toNamed('/dio'),
-              child: Text(
-                'DIO',
-                style: TextStyle(fontSize: 20),
-              ),
-            ),
-            TextButton(
-              onPressed: () => Get.toNamed('/getconnect'),
-              child: Text(
-                'GetConnect',
-                style: TextStyle(fontSize: 20),
-              ),
-            )
           ],
         ),
       ),

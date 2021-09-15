@@ -1,7 +1,8 @@
-import 'package:api_flutter/home/dio/dio_controller.dart';
 import 'package:api_flutter/model/user_model.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+
+import 'dio_controller.dart';
 
 class DioPage extends GetView<DioController> {
   const DioPage({Key? key}) : super(key: key);

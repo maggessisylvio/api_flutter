@@ -1,16 +1,17 @@
-import 'package:api_flutter/home/get_connect/get_connect_controller.dart';
 import 'package:api_flutter/model/user_model.dart';
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
+import 'package:get/state_manager.dart';
 
-class GetConnectPage extends GetView<GetConnectController> {
-  const GetConnectPage({Key? key}) : super(key: key);
+import 'http_controller.dart';
+
+class HttpPage extends GetView<HttpController> {
+  const HttpPage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('GET'),
+        title: Text('HTTP'),
       ),
       body: controller.obx(
         (state) {
